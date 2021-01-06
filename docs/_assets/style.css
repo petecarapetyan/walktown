@@ -13,3 +13,19 @@ body[layout='home'] .markdown-body .call-to-action:nth-of-type(2) {
     transform: rotate(45deg);
   }
 }
+
+
+.ga-show {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: var(--maincolor);
+  padding: 5px;
+}
+
+.ga-show p {
+  margin: 0 0 5px 0;
+}

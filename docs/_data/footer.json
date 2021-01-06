@@ -1,6 +1,6 @@
 [
   {
-    "name": "Foo",
+    "name": "Discover",
     "children": [
       {
         "text": "Blog",
@@ -8,20 +8,20 @@
       },
       {
         "text": "Help and Feedback",
-        "href": "/help/"
+        "href": "https://github.com/modernweb-dev/rocket/issues"
       }
     ]
   },
   {
-    "name": "Bar",
+    "name": "Follow",
     "children": [
       {
         "text": "Github",
-        "href": "https://github.com"
+        "href": "https://github.com/modernweb-dev/rocket"
       },
       {
         "text": "Twitter",
-        "href": "https://twitter.com"
+        "href": "https://twitter.com/modern_web_dev"
       },
       {
         "text": "Slack",
@@ -30,15 +30,15 @@
     ]
   },
   {
-    "name": "Yada",
+    "name": "Support",
     "children": [
       {
         "text": "Sponsor",
         "href": "/about/sponsor/"
       },
       {
-        "text": "Wah",
-        "href": "/wah/"
+        "text": "Contribute",
+        "href": "https://github.com/modernweb-dev/rocket/blob/master/CONTRIBUTING.md"
       }
     ]
   }

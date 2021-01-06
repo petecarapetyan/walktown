@@ -61,9 +61,11 @@ pre {
   height: calc(100% - 2px);
   background-color: white;
 }
+
 .light-dark-switch[checked]::part(thumb) {
-  right: 0px;
+  right: 0;
 }
+
 .light-dark-switch::part(track) {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -90,6 +92,7 @@ pre {
 
 .light-dark-switch {
   margin-right: 50px;
+
   --generic-switch-focus: 0 0 2px 3px #e63a46;
 }
 
@@ -101,8 +104,8 @@ hr {
 
 /** LAYOUT ****************************************************************************************/
 #content-wrapper .content-area,
-header .content-area,
-footer .content-area {
+#main-header .content-area,
+#main-footer .content-area {
   padding: 0 30px;
 }
 
@@ -110,20 +113,8 @@ footer .content-area {
   display: flex;
 }
 
-@media screen and (min-width: 1024px) {
-  #wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .content-area {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
 /** HEADER ****************************************************************************************/
-header {
+#main-header {
   align-items: center;
   padding: 20px 0;
   top: 0;
@@ -132,34 +123,34 @@ header {
   background-color: var(--page-background);
 }
 
-body:not([layout='home']) header {
-  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+body:not([layout='home']) #main-header {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-body[layout='home'] header {
+body[layout='home'] #main-header {
   position: relative;
 }
 
-header .content-area {
+#main-header .content-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header a {
+#main-header a {
   text-decoration: none;
   color: var(--primary-text-color);
-
   transition: color 0.3s ease-in-out;
   font-weight: bold;
   order: 2;
 }
 
-body:not([layout='home']) header a:hover {
+body:not([layout='home']) #main-header a:hover {
   color: var(--primary-color);
 }
 
 #mobile-menu-trigger {
+  color: inherit;
   border: none;
   width: 20px;
   height: 20px;
@@ -172,24 +163,24 @@ body:not([layout='home']) header a:hover {
   display: none;
 }
 
-header .logo-link {
+#main-header .logo-link {
   display: none;
   color: var(--primary-color);
   order: 0;
 }
 
-header .search { 
+#main-header .search {
   order: 2;
 }
 
-header .logo-link span {
+#main-header .logo-link span {
   font-size: 19px;
   font-weight: bold;
   margin-left: 8px;
   vertical-align: middle;
 }
 
-header .light-dark-switch {
+#main-header .light-dark-switch {
   display: none;
 }
 
@@ -199,16 +190,16 @@ header .light-dark-switch {
     width: 30px;
     height: 30px;
   }
-  
+
   .social-link img {
     width: 100%;
   }
 
-  header .content-area > * {
+  #main-header .content-area > * {
     margin-right: 50px;
   }
 
-  header .search {
+  #main-header .search {
     order: 1;
   }
 
@@ -216,18 +207,19 @@ header .light-dark-switch {
     display: none;
   }
 
-  header .logo-link {
+  #main-header .logo-link {
     display: block;
     margin-right: auto;
   }
 
-  header .light-dark-switch {
+  #main-header .light-dark-switch {
     display: block;
   }
 
-  body[layout='home'][home-layout='background'] header a {
+  body[layout='home'][home-layout='background'] #main-header a {
     color: var(--contrast-color-light, #fff);
   }
+
   body[layout='home'][home-layout='background'] .social-link {
     color: var(--contrast-color-light, #fff);
   }
@@ -343,7 +335,7 @@ rocket-navigation > ul {
   text-decoration: none;
 
   /* same as header */
-  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   color: var(--primary-text-color);
   font-weight: bold;
 }
@@ -412,10 +404,7 @@ li.current > ul > li.anchor {
   rocket-navigation {
     padding: 0 25px 0 0;
   }
-
-  body:not([layout='with-sidebar']) #sidebar {
-    display: none;
-  }
+  
 }
 
 /* for blog detail page */
@@ -434,7 +423,8 @@ rocket-navigation h3 {
 }
 
 .sidebar-tags .tag {
-  background: #ccc;
+  background: var(--sidebar-tag-background-color, #ccc);
+  color: var(--sidebar-tag-color, var(--text-color));
   margin: 5px 0 0 5px;
   padding: 5px 10px;
   box-sizing: content-box;
@@ -453,6 +443,7 @@ body[layout='home'] #content-wrapper {
 main {
   width: 100%;
   position: relative;
+
   /* makes sure that code blocks don't grow bigger then main => see https://css-tricks.com/preventing-a-grid-blowout/ */
   min-width: 0;
   margin-top: 40px;
@@ -476,7 +467,7 @@ main > * {
 }
 
 /** FOOTER ****************************************************************************************/
-footer {
+#main-footer {
   margin-top: 50px;
   border-top: 1px solid #eaeaea;
   background-color: var(--footer-background, rgba(0, 0, 0, 0.1));
@@ -643,7 +634,7 @@ body[layout='home'][home-layout='background'] .page-background {
     text-align: left;
   }
 
-  body[layout='home'][home-layout='background'] header {
+  body[layout='home'][home-layout='background'] #main-header {
     background: transparent;
     border-bottom: none;
   }
@@ -660,7 +651,7 @@ body[layout='home'][home-layout='background'] .page-background {
     display: none;
   }
 
-  body[layout='home'][home-layout='background'] header .logo-link {
+  body[layout='home'][home-layout='background'] #main-header .logo-link {
     color: var(--contrast-color-dark, #000);
   }
 }
