@@ -1,4 +1,4 @@
-body[layout='sidebar'] {
+body[layout='with-sidebar'] {
   grid-auto-rows: 0; 
   grid-auto-columns: 0;
   overflow-x: hidden;
