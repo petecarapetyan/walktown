@@ -1,5 +1,5 @@
 ---
-title: Rocket
+title: Rocket Default
 layout: home.njk
 slogan: The modern web setup for static sites with a sprinkle of JavaScript.
 callToActionItems:
