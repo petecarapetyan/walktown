@@ -1,7 +1,7 @@
 ---
-title: Rocket Default
+title: Rocket Defaultus
 layout: home.njk
-slogan: The modern web setup for static sites with a sprinkle of JavaScript.
+slogan: The modern's web setup for static sites with a sprinkle of JavaScript.
 callToActionItems:
   - text: Follow Guides
     href: /guides/
