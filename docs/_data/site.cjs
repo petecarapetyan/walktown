@@ -3,11 +3,11 @@ module.exports = function () {
     dir: 'ltr',
     lang: 'en',
     name: 'U K Blurbs',
-    description: 'not-nyt is a prelimary starter theme for rocket',
+    description: 'not-nyt is a customizeable theme, for the Rocket SSG',
     socialLinks: [
       {
         name: 'GitHub',
-        url: 'https://github.com/petecarapetyan/rocket-themes',
+        url: 'https://github.com/petecarapetyan/rocket-themes/tree/main/not-nyt/src/docs',
       },
     ],
     gitSiteUrl: 'https://github.com/petecarapetyan/rocket-themes',
