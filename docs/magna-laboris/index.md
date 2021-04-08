@@ -1,4 +1,4 @@
-# Magna laboris
+# Magna
 
 <img class="bordered" src="/_merged_assets/_static/images/bulksplash-hnyuuu-C6kgLm0UVAM.jpg" alt="bulksplash-hnyuuu-C6kgLm0UVAM.jpg" />
 

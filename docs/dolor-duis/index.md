@@ -1,4 +1,4 @@
-# Dolor duis
+# Duis
 
 <img class="bordered" src="/_merged_assets/_static/images/bulksplash-dzhahua-qVcptKTaMN8.jpg" alt="bulksplash-dzhahua-qVcptKTaMN8.jpg" />
 
