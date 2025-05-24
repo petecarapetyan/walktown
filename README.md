@@ -1,7 +1,5 @@
-# jukelox demo site
+# walktown
 
-This repo is a personalized/customized version of the [not-nyt fins-rocket-theme](https://github.com/petecarapetyan/fins-rocket-themes/blob/main/not-nyt/src/docs/) code.
+Not-nyt theme
 
-## For more information on fins-rocket-themes
-
-This and other `fins-rocket-themes` are discussed [here](https://webappwriter.com/rocket-themes/) in more detail.
+This repo is a was jukelox but that swapped themes with not-ibm.
